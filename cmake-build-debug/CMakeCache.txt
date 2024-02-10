@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Build the testing tree.
+BUILD_TESTING:BOOL=ON
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=C:/Users/Heshmati/AppData/Local/Programs/CLion/bin/mingw/bin/addr2line.exe
 
@@ -159,6 +162,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=COMP_210
 
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=1.0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Users/Heshmati/AppData/Local/Programs/CLion/bin/mingw/bin/ranlib.exe
 
@@ -246,10 +264,58 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 COMP_210_BINARY_DIR:STATIC=C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug
 
 //Value Computed by CMake
+COMP_210_CODE_BINARY_DIR:STATIC=C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug/src
+
+//Value Computed by CMake
+COMP_210_CODE_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+COMP_210_CODE_SOURCE_DIR:STATIC=C:/Users/Heshmati/CLionProjects/COMP-210/src
+
+//Value Computed by CMake
 COMP_210_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 COMP_210_SOURCE_DIR:STATIC=C:/Users/Heshmati/CLionProjects/COMP-210
+
+//Path to a library.
+DOCTEST:FILEPATH=DOCTEST-NOTFOUND
+
+//Git command line client
+GIT_EXECUTABLE:FILEPATH=C:/Program Files/Git/cmd/git.exe
+
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug
+
+//Value Computed by CMake
+Project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=C:/Users/Heshmati/CLionProjects/COMP-210
+
+//The directory containing a CMake configuration file for doctest::doctest.
+"doctest::doctest_DIR":PATH=doctest::doctest_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for doctest.
+doctest_DIR:PATH=doctest_DIR-NOTFOUND
+
+//Value Computed by CMake
+tests_BINARY_DIR:STATIC=C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug
+
+//Value Computed by CMake
+tests_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+tests_SOURCE_DIR:STATIC=C:/Users/Heshmati/CLionProjects/COMP-210
+
+//Value Computed by CMake
+unit_tests_BINARY_DIR:STATIC=C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug/unit_tests
+
+//Value Computed by CMake
+unit_tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+unit_tests_SOURCE_DIR:STATIC=C:/Users/Heshmati/CLionProjects/COMP-210/unit_tests
 
 
 ########################
@@ -354,7 +420,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -410,6 +476,12 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_TAPI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+///lib
+DOCTEST_INCLUDE_DIR:INTERNAL=C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug/doctest/src/doctest/doctest
+//Details about finding Git
+FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[C:/Program Files/Git/cmd/git.exe][v2.42.0.windows.2()]
+//ADVANCED property for variable: GIT_EXECUTABLE
+GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 

@@ -12,6 +12,14 @@
 # =============================================================================
 
 #############################################
+# Rule for running custom commands.
+
+rule CUSTOM_COMMAND
+  command = $COMMAND
+  description = $DESC
+
+
+#############################################
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__COMP_210_unscanned_Debug
@@ -31,11 +39,22 @@ rule CXX_EXECUTABLE_LINKER__COMP_210_Debug
 
 
 #############################################
-# Rule for running custom commands.
+# Rule for compiling CXX files.
 
-rule CUSTOM_COMMAND
-  command = $COMMAND
-  description = $DESC
+rule CXX_COMPILER__MyTests_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\Users\Heshmati\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__MyTests_Debug
+  command = cmd.exe /C "$PRE_LINK && C:\Users\Heshmati\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
 
 
 #############################################
