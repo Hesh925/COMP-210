@@ -1,8 +1,0 @@
-C:\Users\Heshmati\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/Heshmati/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S C:\Users\Heshmati\CLionProjects\COMP-210 -B C:\Users\Heshmati\CLionProjects\COMP-210\cmake-build-debug
-CMake Error at unit_tests/CMakeLists.txt:11 (target_link_libraries):
-  Target "COMP_210" of type EXECUTABLE may not be linked into another target.
-  One may link only to INTERFACE, OBJECT, STATIC or SHARED libraries, or to
-  executables with the ENABLE_EXPORTS property set.
-
-
--- Configuring incomplete, errors occurred!
