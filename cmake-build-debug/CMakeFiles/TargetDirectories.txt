@@ -1,8 +1,0 @@
-C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug/src/CMakeFiles/COMP_210.dir
-C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug/src/CMakeFiles/edit_cache.dir
-C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
-C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug/unit_tests/CMakeFiles/MyTests.dir
-C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug/unit_tests/CMakeFiles/edit_cache.dir
-C:/Users/Heshmati/CLionProjects/COMP-210/cmake-build-debug/unit_tests/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,9 @@
+set(UTILS_SOURCES
+        ${CMAKE_SOURCE_DIR}/utils/Utils/misc.cpp
+        ${CMAKE_SOURCE_DIR}/utils/Utils/printing.cpp
+        ${CMAKE_SOURCE_DIR}/utils/Utils/search.cpp
+        ${CMAKE_SOURCE_DIR}/utils/Utils/sorting.cpp
+        ${CMAKE_SOURCE_DIR}/utils/Utils/utils.cpp)
+
+add_library(Util ${UTILS_SOURCES})
+
