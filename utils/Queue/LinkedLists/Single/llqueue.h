@@ -34,6 +34,8 @@ public:
     bool isEmpty();
     int getLength();
 
+    ~llQueue();
+
 protected:
     Iterator begin();
     Iterator end();

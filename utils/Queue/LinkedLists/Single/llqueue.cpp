@@ -21,8 +21,13 @@ void llQueue::Enqueue(int data) {
 
 int llQueue::Dequeue() {
     node* node = head;
-    head = node->next;
     int data = node->data;
+    if(node->next == nullptr) { // Only one item in Queue
+        head = nullptr;
+        tail = nullptr;
+    } else {
+        head = node->next;
+    }
     delete node;
     return data;
 }
@@ -65,6 +70,11 @@ void llQueue::print() {
     }
 }
 
+llQueue::~llQueue() {
+    while(!this->isEmpty()) {
+        this->Dequeue();
+    }
+}
 
 Iterator llQueue::begin() {
     Iterator iter;
@@ -79,8 +89,6 @@ Iterator llQueue::end() {
     iter.container = this;
     return iter;
 }
-
-
 
 Iterator::Iterator() {
     position = nullptr;
