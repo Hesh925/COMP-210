@@ -1,6 +1,6 @@
 set(QUEUE_SOURCES
-        ${CMAKE_SOURCE_DIR}/utils/Queue/LinkedLists/Single/LLQueue.cpp
-        ${CMAKE_SOURCE_DIR}/utils/Queue/LinkedLists/CircularDouble/CLLQueue.cpp
+        ${CMAKE_SOURCE_DIR}/utils/Queue/LinkedLists/Single/SingleLL.cpp
+        ${CMAKE_SOURCE_DIR}/utils/Queue/LinkedLists/CircularDouble/CircularDouble.cpp
         ${CMAKE_SOURCE_DIR}/utils/Queue/Array/arrayQueue.cpp
 )
 message(DEBUG "QUEUE_SOURCES: ${QUEUE_SOURCES}")
