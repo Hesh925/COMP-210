@@ -1,37 +1,48 @@
 //
 // Created by Heshmati on 4/8/2024.
+// Circular Linked List Queue.h
 //
 
-#ifndef COMP_210_CLLQUEUE_H
-#define COMP_210_CLLQUEUE_H
+
+#ifndef COMP_210_SINGLELL_H
+#define COMP_210_SINGLELL_H
+
 
 using namespace std;
 
+
 class Iterator;
-class CLLStack;
+class CLLQueue;
+
 
 class node {
 private:
     node* next = nullptr;
-    node* prev = nullptr;
     int data;
 public:
     node(int data) {this->data = data; }
     friend class Iterator;
-    friend class CllQueue;
+    friend class SingleLLQueue;
 };
 
-class CllQueue {
+
+/**
+* Singly Linked List Queue
+*/
+class SingleLLQueue {
 private:
     node* head = nullptr;
+    node* tail = nullptr;
 public:
+    SingleLLQueue() = default;
     void Enqueue(int data);
     int Dequeue();
     int peek();
     void print();
-
     bool isEmpty();
     int getLength();
+
+    ~SingleLLQueue();
 
 protected:
     Iterator begin();
@@ -42,47 +53,23 @@ protected:
 
 class Iterator {
 public:
-    /**
-       Constructs an iterator that does not point into any list.
-    */
     Iterator();
-
-    /**
-       Looks up the value at a position.
-       @return the value of the node to which the iterator points
-    */
     int get() const;
-
-    /**
-       Advances the iterator to the next node.
-    */
     void next();
-
-    /**
-       Moves the iterator to the previous node.
-    */
     void previous();
-
-    /**
-       Compares two iterators.
-       @param other the iterator to compare with this iterator
-       @return true if this iterator and other are equal
-    */
     bool equals(Iterator other) const;
 
     // Overloaded operators
     bool operator==(const Iterator &other) const;
     bool operator!=(const Iterator &other) const;
     Iterator& operator++();
-    Iterator& operator--();
-
-    friend class CircularList;
 
 private:
     node *position;
-    CllQueue *container;
+    SingleLLQueue *container;
 
-    friend class CllQueue;
+    friend class SingleLLQueue;
 };
 
-#endif //COMP_210_CLLQUEUE_H
+
+#endif //COMP_210_SINGLELL_H

@@ -2,7 +2,7 @@
 // Created by Heshmati on 4/8/2024.
 //
 
-#include "CllQueue.h"
+#include "CircularDouble.h"
 #include <stdio.h>
 #include <iostream>
 
@@ -54,7 +54,7 @@ bool Iterator::operator!=(const Iterator &other) const {
     return !equals(other);
 }
 
-void CllQueue::Enqueue(int data) {
+void CircularDouble::Enqueue(int data) {
     node* new_node = new node(data);
     if(head == nullptr) {
         head = new_node;
@@ -74,7 +74,7 @@ void CllQueue::Enqueue(int data) {
     }
 }
 
-int CllQueue::Dequeue() {
+int CircularDouble::Dequeue() {
     node* node = head;
 
     head = node->next;
@@ -82,15 +82,15 @@ int CllQueue::Dequeue() {
     return node->data;
 }
 
-int CllQueue::peek() {
+int CircularDouble::peek() {
     return head->data;
 }
 
-bool CllQueue::isEmpty() {
+bool CircularDouble::isEmpty() {
     return head == nullptr;
 }
 
-int CllQueue::getLength() {
+int CircularDouble::getLength() {
     Iterator pos = this->begin();
     int length = 0;
     if(this->isEmpty()) return 0;
@@ -103,7 +103,7 @@ int CllQueue::getLength() {
     return length;
 }
 
-void CllQueue::print() {
+void CircularDouble::print() {
     Iterator pos = this->begin();
     if(this->isEmpty()) {
         cout << endl;
@@ -121,13 +121,13 @@ void CllQueue::print() {
 }
 
 
-Iterator CllQueue::begin() {
+Iterator CircularDouble::begin() {
     Iterator iter;
     iter.position = head;
     iter.container = this;
     return iter;
 }
-Iterator CllQueue::end() {
+Iterator CircularDouble::end() {
     Iterator iter;
     iter.position = head->prev;
     iter.container = this;

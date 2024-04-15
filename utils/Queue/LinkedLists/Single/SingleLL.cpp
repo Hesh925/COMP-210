@@ -3,13 +3,13 @@
 // Circular Linked List Queue.cpp
 //
 
-#include "llqueue.h"
+#include "SingleLL.h"
 #include <iostream>
 
 using namespace std;
 
 
-void llQueue::Enqueue(int data) {
+void SingleLLQueue::Enqueue(int data) {
     node* new_node = new node(data);
     if(head == nullptr) { // No items in Queue
         head = new_node;
@@ -21,7 +21,7 @@ void llQueue::Enqueue(int data) {
 }
 
 
-int llQueue::Dequeue() {
+int SingleLLQueue::Dequeue() {
     node* node = head;
     int data = node->data;
     if(node->next == nullptr) { // Only one item in Queue
@@ -35,17 +35,17 @@ int llQueue::Dequeue() {
 }
 
 
-int llQueue::peek() {
+int SingleLLQueue::peek() {
     return head->data;
 }
 
 
-bool llQueue::isEmpty() {
+bool SingleLLQueue::isEmpty() {
     return head == nullptr;
 }
 
 
-int llQueue::getLength() {
+int SingleLLQueue::getLength() {
     if(this->isEmpty()) return 0;
     Iterator pos = this->begin();
     int length = 0;
@@ -60,7 +60,7 @@ int llQueue::getLength() {
 }
 
 
-void llQueue::print() {
+void SingleLLQueue::print() {
     Iterator pos = this->begin();
     if(this->isEmpty()) {
         cout << endl;
@@ -78,14 +78,14 @@ void llQueue::print() {
 }
 
 
-llQueue::~llQueue() {
+SingleLLQueue::~SingleLLQueue() {
     while(!this->isEmpty()) {
         this->Dequeue();
     }
 }
 
 
-Iterator llQueue::begin() {
+Iterator SingleLLQueue::begin() {
     Iterator iter;
     iter.position = head;
     iter.container = this;
@@ -93,7 +93,7 @@ Iterator llQueue::begin() {
 }
 
 
-Iterator llQueue::end() {
+Iterator SingleLLQueue::end() {
     Iterator iter;
     iter.position = tail;
     iter.container = this;

@@ -3,5 +3,5 @@ set(LISTS_SOURCES
         ${CMAKE_SOURCE_DIR}/utils/Lists/LinkedList/LinkedList.cpp
         ${CMAKE_SOURCE_DIR}/utils/Lists/CircularList/CircularList.cpp
 )
-
+message(DEBUG "LISTS_SOURCES: ${LISTS_SOURCES}")
 add_library(Lists ${LISTS_SOURCES})

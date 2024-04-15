@@ -1,8 +1,8 @@
 // main.cpp
 
 #include <iostream>
-#include "utils/Queue/LinkedLists/Single/llqueue.cpp"
-#include "utils/Queue/Array/arrayQueue.h"
+#include "utils/Queue/LinkedLists/Single/SingleLL.cpp"
+#include "utils/Queue/Array/arrayQueue.cpp"
 using namespace std;
 
 
