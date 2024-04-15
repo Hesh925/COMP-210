@@ -1,12 +1,13 @@
 //
 // Created by Heshmati on 4/8/2024.
-// Circular Linked List Queue
+// Circular Linked List Queue.cpp
 //
 
 #include "llqueue.h"
 #include <iostream>
 
 using namespace std;
+
 
 void llQueue::Enqueue(int data) {
     node* new_node = new node(data);
@@ -18,6 +19,7 @@ void llQueue::Enqueue(int data) {
         tail = new_node;
     }
 }
+
 
 int llQueue::Dequeue() {
     node* node = head;
@@ -32,13 +34,16 @@ int llQueue::Dequeue() {
     return data;
 }
 
+
 int llQueue::peek() {
     return head->data;
 }
 
+
 bool llQueue::isEmpty() {
     return head == nullptr;
 }
+
 
 int llQueue::getLength() {
     if(this->isEmpty()) return 0;
@@ -50,8 +55,10 @@ int llQueue::getLength() {
         ++pos;
     }
 
+
     return length;
 }
+
 
 void llQueue::print() {
     Iterator pos = this->begin();
@@ -70,11 +77,13 @@ void llQueue::print() {
     }
 }
 
+
 llQueue::~llQueue() {
     while(!this->isEmpty()) {
         this->Dequeue();
     }
 }
+
 
 Iterator llQueue::begin() {
     Iterator iter;
@@ -83,6 +92,7 @@ Iterator llQueue::begin() {
     return iter;
 }
 
+
 Iterator llQueue::end() {
     Iterator iter;
     iter.position = tail;
@@ -90,50 +100,39 @@ Iterator llQueue::end() {
     return iter;
 }
 
+
 Iterator::Iterator() {
     position = nullptr;
     container = nullptr;
 }
 
+
 int Iterator::get() const {
     return position->data;
 }
+
 
 void Iterator::next() {
     position = position->next;
 }
 
+
 bool Iterator::equals(Iterator other) const {
     return position == other.position;
 }
+
 
 Iterator& Iterator::operator++() {
     this->next();
     return *this;
 }
 
-Iterator& Iterator::operator--() {
-    this->previous();
-    return *this;
-}
 
 bool Iterator::operator==(const Iterator &other) const {
     return equals(other);
 }
 
+
 bool Iterator::operator!=(const Iterator &other) const {
     return !equals(other);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

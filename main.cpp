@@ -2,35 +2,49 @@
 
 #include <iostream>
 #include "utils/Queue/LinkedLists/Single/llqueue.cpp"
-
+#include "utils/Queue/Array/arrayQueue.h"
 using namespace std;
 
-int main() {
 
+void test_llQueue();
+void test_arrayQueue();
+
+
+int main() {
+//    cout << "Linked List Queue" << endl;
+//    test_llQueue();
+    cout << endl << "Array Queue" << endl;
+    test_arrayQueue();
+    return 0;
 }
 
 
-void test_llQueue() {
-    llQueue queue;
-    queue.Enqueue(1);
-    queue.Enqueue(2);
-    queue.Enqueue(3);
-    queue.Enqueue(4);
-    queue.Enqueue(5);
-    queue.Enqueue(6);
-    queue.Enqueue(7);
-    queue.Enqueue(8);
-    queue.Enqueue(9);
-    queue.Enqueue(10);
+void test_arrayQueue() {
+    arrayQueue queue = arrayQueue(20);
+
+
+    for(int i = 0; i < 20; i++) {
+        queue.Enqueue(i+1);
+    }
+
+
     queue.print();
+
+
     cout << "Length: " << queue.getLength() << endl;
     cout << "Peek: " << queue.peek() << endl;
     cout << "Dequeue: " << queue.Dequeue() << endl;
     cout << "Peek: " << queue.peek() << endl;
     cout << "Length: " << queue.getLength() << endl;
     queue.print();
-    delete &queue;
+
+
+    cout << "Dequeue: " << queue.Dequeue() << endl;
+    cout << "Dequeue: " << queue.Dequeue() << endl;
+    cout << "Dequeue: " << queue.Dequeue() << endl << endl;
+    cout << "Enqueue: 1" << endl; queue.Enqueue(1);
+    cout << "Enqueue: 2" << endl << endl; queue.Enqueue(2);
+
+
+    queue.print();
 }
-
-
-
