@@ -11,9 +11,9 @@ using namespace std;
 /**
  * @brief Bubble sort algorithm
  * @param arr Array of integers
- * @param n Length of the array
+ * @param n Length of the Array
  * @example int arr[] = {64, 34, 25, 12, 22, 11, 90};
- * utils::bubbleSort(arr, 7);
+ * Utils::bubbleSort(arr, 7);
  */
 void utils::selectionSort(int arr[], int n) {
     int i, j, min_index;
@@ -21,7 +21,7 @@ void utils::selectionSort(int arr[], int n) {
     // One by one move boundary of unsorted subarray
     for (i = 0; i < n - 1; i++) {
 
-        // Find the minimum element in unsorted array
+        // Find the minimum element in unsorted Array
         min_index = i;
         for (j = i + 1; j < n; j++) {
             if (arr[j] < arr[min_index])
@@ -38,9 +38,9 @@ void utils::selectionSort(int arr[], int n) {
 /**
  * @brief Bubble sort algorithm
  * @param numbers Array of integers
- * @param numbersSize Length of the array
+ * @param numbersSize Length of the Array
  * @example int numbers[] = {64, 34, 25, 12, 22, 11, 90};
- * utils::BubbleSort(numbers, 7);
+ * Utils::BubbleSort(numbers, 7);
  */
 void utils::bubbleSort(int numbers[], int numbersSize) {
     int temp = 0;
@@ -58,9 +58,9 @@ void utils::bubbleSort(int numbers[], int numbersSize) {
 /**
  * @brief Insertion sort algorithm
  * @param arr Array of integers
- * @param n Length of the array
+ * @param n Length of the Array
  * @example int arr[] = {64, 34, 25, 12, 22, 11, 90};
- * utils::insertionSort(arr, 7);
+ * Utils::insertionSort(arr, 7);
  */
 void utils::insertionSort(int arr[], int n) {
     int i, key, j;
@@ -80,7 +80,7 @@ void utils::insertionSort(int arr[], int n) {
  * @brief Insertion sort algorithm
  * @param arr Array of strings
  * @example vector<string> arr = {"Hello", "World", "This", "Is", "A", "Test"};
- * utils::insertionSort(arr);
+ * Utils::insertionSort(arr);
  */
 void utils::insertionSort(vector<string> &arr) {
     int i, j;

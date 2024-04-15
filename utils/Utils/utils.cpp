@@ -49,15 +49,15 @@ int runTests() {
     InsertionSortInterleaved(arr2_2, 5, 0, 2);
     InsertionSortInterleaved(arr2_3, 5, 0, 1);
 
-    cout << "Sorted array with gap 1: ";
+    cout << "Sorted Array with gap 1: ";
     for (int i = 0; i < 5; i++) {
         cout << arr2_1[i] << " ";
     }
-    cout << endl << "Sorted array with gap 2: ";
+    cout << endl << "Sorted Array with gap 2: ";
     for (int i = 0; i < 5; i++) {
         cout << arr2_2[i] << " ";
     }
-    cout << endl << "Sorted array with gap 3: ";
+    cout << endl << "Sorted Array with gap 3: ";
     for (int i = 0; i < 5; i++) {
         cout << arr2_3[i] << " ";
     }
@@ -66,7 +66,7 @@ int runTests() {
 
     utils::bubbleSort(arr3, 7);
 
-    cout << endl << "Sorted array: ";
+    cout << endl << "Sorted Array: ";
     for (int i = 0; i < 7; i++) {
         cout << arr3[i] << " ";
     }

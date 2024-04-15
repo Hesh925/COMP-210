@@ -1,0 +1,4 @@
+set(STACKS_SOURCES
+        ${CMAKE_SOURCE_DIR}/utils/Stacks/Array/arrayStack.cpp)
+
+add_library(Stacks ${STACKS_SOURCES})

@@ -11,9 +11,9 @@ using namespace std;
 /**
  * @brief Binary search algorithm
  * @param arr Array of integers
- * @param target Integer to search for within the array
- * @return int Index of the target integer within the array
- * @example int result = utils::binarySearch(arr, target);
+ * @param target Integer to search for within the Array
+ * @return int Index of the target integer within the Array
+ * @example int result = Utils::binarySearch(arr, target);
  */
 
 int utils::binarySearch(vector<int> arr, int target) {
@@ -21,7 +21,7 @@ int utils::binarySearch(vector<int> arr, int target) {
     int mid = 0;
     int low = 0;
 
-    // Loop through the array
+    // Loop through the Array
     while (low <= high) {
         // Find the middle index
         mid = (low + high) / 2;
@@ -43,12 +43,12 @@ int utils::binarySearch(vector<int> arr, int target) {
 /**
  * @brief Recursive binary search algorithm
  * @param arr Array of integers
- * @param target Integer to search for within the array
+ * @param target Integer to search for within the Array
  * @param low zero
- * @param high length of the array
+ * @param high length of the Array
  * @return int
  *
- * @example int result = utils::recursiveBinarySearch(arr, target, arr.size() - 1, 0);
+ * @example int result = Utils::recursiveBinarySearch(arr, target, arr.size() - 1, 0);
  */
 int utils::recursiveBinarySearch(vector<int> arr, int target, int high, int low) {
     // Base case
@@ -70,9 +70,9 @@ int utils::recursiveBinarySearch(vector<int> arr, int target, int high, int low)
 /**
  * @brief Binary search algorithm
  * @param arr Array of strings
- * @param target String to search for within the array
- * @return int Index of the target integer within the array
- * @example int result = utils::binarySearch(arr, target);
+ * @param target String to search for within the Array
+ * @return int Index of the target integer within the Array
+ * @example int result = Utils::binarySearch(arr, target);
  */
 
 int utils::binarySearch(vector<string>& arr, string target) {
@@ -80,7 +80,7 @@ int utils::binarySearch(vector<string>& arr, string target) {
     int mid = 0;
     int low = 0;
 
-    // Loop through the array
+    // Loop through the Array
     while (low <= high) {
 
         // Find the middle index

@@ -125,7 +125,7 @@ TEST_SUITE("UTILS") {
 
 //    TEST_CASE("Calculate Pi" * doctest::timeout(0.2)) {
 //        SUBCASE("Calculate Pi") {
-//            CHECK(utils::calculatePi(1000) == doctest::Approx(3.14159).epsilon(0.01));
+//            CHECK(Utils::calculatePi(1000) == doctest::Approx(3.14159).epsilon(0.01));
 //        }
 //    }
 }

@@ -12,7 +12,7 @@ using namespace std;
  * @brief Fibonacci sequence generator
  * @param n Number of fibonacci numbers to generate
  * @return int Nth fibonacci number
- * @example cout << utils::fibonacci(10);
+ * @example cout << Utils::fibonacci(10);
  */
 int utils::fibonacci(int n) {
     int a = 0;
@@ -36,7 +36,7 @@ int utils::fibonacci(int n) {
  * @brief Recursive fibonacci sequence generator
  * @param n Number of fibonacci numbers to generate
  * @return int Nth fibonacci number
- * @example cout << utils::recursiveFibonacci(10);
+ * @example cout << Utils::recursiveFibonacci(10);
  */
 int utils::recursiveFibonacci(int n) {
     if (n <= 1) {
@@ -51,7 +51,7 @@ int utils::recursiveFibonacci(int n) {
  * @param base Base number
  * @param exponent Exponent
  * @return int Result of base^exponent
- * @example cout << utils::power(2, 3);
+ * @example cout << Utils::power(2, 3);
 */
 double utils::power(int base, int exponent) {
     double out = 1;
@@ -66,7 +66,7 @@ double utils::power(int base, int exponent) {
  * @param base Base number
  * @param exponent Exponent
  * @return int Result of base^exponent
- * @example cout << utils::power(2, 3);
+ * @example cout << Utils::power(2, 3);
 */
 double utils::recursivePower(int base, int exponent) {
     if (exponent == 0) {
@@ -105,7 +105,7 @@ int utils::recursiveFactorial(int base) {
  * @brief Reverse string function
  * @param str String to reverse
  * @return string Reversed string
- * @example cout << utils::reverseString("Hello, World!"); // "!dlroW ,olleH"
+ * @example cout << Utils::reverseString("Hello, World!"); // "!dlroW ,olleH"
  */
 string utils::reverseString(string str) {
     for (int i = 0; i < str.length() / 2; i++) {
@@ -122,7 +122,7 @@ string utils::reverseString(string str) {
  * @param start Start index
  * @param end End index
  * @return string Reversed string
- * @example cout << utils::recursiveReverseString("Hello, World!", 0, str.length() - 1);
+ * @example cout << Utils::recursiveReverseString("Hello, World!", 0, str.length() - 1);
  */
 string utils::recursiveReverseString(string str, int start, int end) {
     if (start >= end) {
@@ -140,7 +140,7 @@ string utils::recursiveReverseString(string str, int start, int end) {
  * @brief Decimal to binary converter
  * @param n Decimal number
  * @return int Binary number
- * @example cout << utils::decimalToBinary(100);
+ * @example cout << Utils::decimalToBinary(100);
  */
 int utils::decimalToBinary(int n) {
     int out = 0;
@@ -157,7 +157,7 @@ int utils::decimalToBinary(int n) {
  * @brief Recursive decimal to binary converter
  * @param n Decimal number
  * @return int Binary number
- * @example cout << utils::recursiveDecimalToBinary(100);
+ * @example cout << Utils::recursiveDecimalToBinary(100);
  */
 int utils::recursiveDecimalToBinary(int n) {
     if (n == 0) {
@@ -169,7 +169,7 @@ int utils::recursiveDecimalToBinary(int n) {
 /**
  * @brief Array length function
  * @param arr Array of integers
- * @return int Length of the array
+ * @return int Length of the Array
  */
 int utils::arrayLen(int arr[]) {
     return (sizeof(arr) / sizeof(arr[0]));
