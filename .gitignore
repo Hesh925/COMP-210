@@ -26,9 +26,9 @@
 *.a
 *.lib
 
-lib/
+./lib/
+./.idea/
 
 # Executables
 *.exe
 *.out
-*.app!/lib/
