@@ -18,8 +18,8 @@ private:
 
     void shift();
     int resize();
-public:
     int* array;
+public:
     arrayQueue() {
         this->array = new int[arraySize];
     }
