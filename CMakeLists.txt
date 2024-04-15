@@ -8,4 +8,3 @@ set(sourceFiles "main.cpp")
 add_subdirectory(utils)
 
 add_executable(${PROJECT_NAME} ${sourceFiles})
-
