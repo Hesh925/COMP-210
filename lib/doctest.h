@@ -3230,7 +3230,7 @@ DOCTEST_MAKE_STD_HEADERS_CLEAN_FROM_WARNINGS_ON_WALL_BEGIN
 
 DOCTEST_MAKE_STD_HEADERS_CLEAN_FROM_WARNINGS_ON_WALL_END
 
-// counts the number of elements in a C Array
+// counts the number of elements in a C array
 #define DOCTEST_COUNTOF(x) (sizeof(x) / sizeof(x[0]))
 
 #ifdef DOCTEST_CONFIG_DISABLE

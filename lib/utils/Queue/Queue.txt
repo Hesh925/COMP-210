@@ -1,0 +1,7 @@
+set(QUEUE_SOURCES
+        ${CMAKE_CURRENT_LIST_DIR}/LinkedLists/Single/SingleLL.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/LinkedLists/CircularDouble/CircularDouble.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/Array/arrayQueue.cpp
+)
+
+add_library(Queue ${QUEUE_SOURCES})
