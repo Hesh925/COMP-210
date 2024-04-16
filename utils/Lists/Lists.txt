@@ -1,7 +1,0 @@
-set(LISTS_SOURCES
-        ${CMAKE_SOURCE_DIR}/utils/Lists/DoubleLinkedList/DoubleLinkedList.cpp
-        ${CMAKE_SOURCE_DIR}/utils/Lists/LinkedList/LinkedList.cpp
-        ${CMAKE_SOURCE_DIR}/utils/Lists/CircularList/CircularList.cpp
-)
-
-add_library(Lists ${LISTS_SOURCES})
